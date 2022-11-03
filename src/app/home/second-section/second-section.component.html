@@ -1,3 +1,30 @@
-<section class="p-4 min-w-full min-h-full">
-    <p class="text-3xl font-bold">Our Barbers!</p>
+<!-- Barbers -->
+<section class="p-4 min-w-full min-h-full flex flex-col items-center justify-center border-t-2 border-slate-300 relative mb-12">
+    <p class="text-3xl font-bold underline underline-offset-8 decoration-4 decoration-wavy mb-6">Our Barbers</p>
+    <div class="barber-container flex flex-col md:flex-row md:flex-wrap py-6 gap-8 items-center justify-center">
+        
+
+        <div *ngFor="let i of ['hi','bye','hello']" class="card flex flex-col border-8 border-gray-400 md:hover:border-gray-600 md:hover:shadow-xl md:hover:shadow-gray-500/20 border- rounded p-4 max-w-xs relative">
+            <img class="max-h-56 object-contain grayscale" src="/assets/background.png" alt="profile-img">
+            <div class="details">
+                <div class="text-2xl font-bold font-sans flex flex-col items-center justify-center py-2">
+                    <p>John Stone</p>
+                </div>
+                <div class="px-2 text-center">John is very good in shaving. He has over 20 Years of experience. He is also good in music. He has numerous awards in that field.</div>
+                <button class="w-full p-4 mx-auto text-white bg-black rounded text-sm font-sans my-4 font-bold hover:bg-gray-700 duration-200 cursor-pointer">Read More...</button> 
+            </div>
+            <div class="absolute h-12 w-12 rounded-full border-4 border-emerald-700 flex items-center justify-center animate-bounce z-10 -top-5 -left-5 bg-white">
+                <img class="h-6" src="/assets/razor.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <a href="#"
+        class="cursor-pointer bg-gray-200 text-gray-800 px-4 py-2 rounded-2xl flex items-center justify-center flex-nowrap gap-2 animate-bounce absolute -bottom-8">
+        <p>See More</p>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+        </svg>
+    </a>
 </section>
