@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Service } from 'src/app/shared/model/service';
 
 @Component({
   selector: 'app-our-services-card',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./our-services-card.component.css']
 })
 export class OurServicesCardComponent implements OnInit {
+  @Input() service: Service;
 
   constructor() { }
 

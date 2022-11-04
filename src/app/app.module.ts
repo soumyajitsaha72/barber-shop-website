@@ -13,6 +13,7 @@ import { OurServicesComponent } from './our-services/our-services.component';
 import { ContactUsComponent } from './home/contact-us/contact-us.component';
 import { ThirdSectionComponent } from './home/third-section/third-section.component';
 import { OurServicesCardComponent } from './home/third-section/our-services-card/our-services-card.component';
+import { BarberCardComponent } from './home/second-section/barber-card/barber-card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { OurServicesCardComponent } from './home/third-section/our-services-card
     OurServicesComponent,
     ContactUsComponent,
     ThirdSectionComponent,
-    OurServicesCardComponent
+    OurServicesCardComponent,
+    BarberCardComponent
   ],
   imports: [
     BrowserModule,

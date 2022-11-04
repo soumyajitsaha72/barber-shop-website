@@ -4,20 +4,8 @@
     <p class="text-3xl font-bold underline underline-offset-8 decoration-4 decoration-wavy mb-6">Our Services</p>
     <div class="flex flex-col md:flex-row md:flex-wrap py-6 gap-10 md:gap-24 md:mx-16 items-center justify-center">
 
-        <div class="max-w-xs md:max-w-lg" *ngFor="let s of services | slice:0:4">
-            <div class="border-8 border-gray-300 rounded max-w-fit">
-                <img [src]="s.img" alt="services-img" class="max-h-48 md:max-h-60">
-            </div>
-            <div
-                class="rounded bg-black text-white p-6 w-4/5 -mt-16 md:-mt-20 md:-mr-16 relative float-right font-sans flex flex-col gap-2">
-                <p class="uppercase text-xl font-light">The Cut - <span class="normal-case">Rs 50</span></p>
-                <p class="uppercase font-bold text-sm">The best cut of your life!</p>
-                <p class="text-xs font-extralight">There is nothing wrong with men getting a bit of pampering and
-                    grooming. This classic treatment will give you just that.
-                    Our barbers will hook you up with a mean shave using traditional razors giving you an immaculate
-                    shave.</p>
-            </div>
-        </div>
+        <app-our-services-card *ngFor="let service of services | slice:0:4" [service]="service">
+        </app-our-services-card>
 
     </div>
 
@@ -30,4 +18,3 @@
         </svg>
     </a>
 </section>
-
