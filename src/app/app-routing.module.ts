@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { OurBarbersComponent } from './our-barbers/our-barbers.component';
 import { OurServicesComponent } from './our-services/our-services.component';
@@ -11,19 +13,19 @@ const routes: Routes = [
   },
   {
     path: 'about',
-    component: OurServicesComponent,
+    component: AboutComponent,
   },
   {
     path: 'services',
     component: OurServicesComponent,
-    // data: {
-    //   servicesSliceStart: -5,
-    //   servicesSliceEnd: -4,
-    // },
   },
   {
     path: 'barbers',
     component: OurBarbersComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
   },
 ];
 

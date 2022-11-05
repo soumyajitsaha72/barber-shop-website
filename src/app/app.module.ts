@@ -5,8 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoaderComponent } from './loader/loader.component';
 import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './home/navbar/navbar.component';
-import { FooterComponent } from './home/footer/footer.component';
+import { NavbarComponent } from './outlet/navbar/navbar.component';
+import { FooterComponent } from './outlet/footer/footer.component';
 import { FirstSectionComponent } from './home/first-section/first-section.component';
 import { OurServicesComponent } from './our-services/our-services.component';
 import { ContactUsComponent } from './home/contact-us/contact-us.component';
@@ -14,6 +14,8 @@ import { OurServicesCardComponent } from './our-services/our-services-card/our-s
 import { BarberCardComponent } from './our-barbers/barber-card/barber-card.component';
 import { OutletComponent } from './outlet/outlet.component';
 import { OurBarbersComponent } from './our-barbers/our-barbers.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { OurBarbersComponent } from './our-barbers/our-barbers.component';
     BarberCardComponent,
     OutletComponent,
     OurBarbersComponent,
+    AboutComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

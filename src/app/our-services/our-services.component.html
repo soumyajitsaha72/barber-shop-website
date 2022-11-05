@@ -11,7 +11,7 @@
     class="flex flex-col md:flex-row md:flex-wrap py-6 gap-10 md:gap-24 md:mx-16 items-center justify-center"
   >
     <app-our-services-card
-      *ngFor="let service of services | slice: 0:4"
+      *ngFor="let service of services | slice: sliceStart:sliceEnd"
       [service]="service"
     >
     </app-our-services-card>

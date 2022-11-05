@@ -11,6 +11,8 @@ import { Service } from '../shared/model/service';
 export class OurServicesComponent implements OnInit {
   services: Service[];
   displaySeeMore: boolean;
+  sliceStart = 0;
+  sliceEnd = 4;
 
   constructor(
     private barberShopService: BarberShop,
@@ -18,16 +20,13 @@ export class OurServicesComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // this.route.data.subscribe((m) => {
-    //   this.servicesSliceStart = m.servicesSliceStart;
-    //   this.servicesSliceEnd = m.servicesSliceEnd;
-    // });
-
     this.displaySeeMore = true;
     this.services = this.barberShopService.services;
 
     if (this.route.snapshot.routeConfig.path === 'services') {
       this.displaySeeMore = false;
+      this.sliceStart = 0;
+      this.sliceEnd = 100;
     }
   }
 }

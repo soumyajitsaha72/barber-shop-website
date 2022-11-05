@@ -3,13 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-outlet',
   templateUrl: './outlet.component.html',
-  styleUrls: ['./outlet.component.css']
+  styleUrls: ['./outlet.component.css'],
 })
 export class OutletComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

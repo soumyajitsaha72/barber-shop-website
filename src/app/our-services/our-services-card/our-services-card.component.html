@@ -1,12 +1,19 @@
 <div class="max-w-xs md:max-w-lg">
-    <div class="border-8 border-gray-300 rounded max-w-fit">
-        <img [src]="service.img" alt="services-img" class="max-h-48 md:max-h-60">
-    </div>
-    <div
-        class="md:max-w-md rounded bg-black text-white p-6 w-4/5 -mt-16 md:-mt-20 md:-mr-16 relative float-right font-sans flex flex-col gap-2">
-        <p class="uppercase text-xl font-light">{{ service.name }} - <span class="normal-case">Rs {{ service.price
-                }}</span></p>
-        <p class="uppercase font-bold text-sm">{{ service.tag }}</p>
-        <p class="text-xs font-extralight">{{ service.description }}</p>
-    </div>
+  <div class="border-8 border-gray-300 rounded max-w-fit">
+    <img [src]="service.img" alt="services-img" class="max-h-48 md:max-h-60" />
+  </div>
+  <div
+    class="md:max-w-md rounded bg-black text-white p-6 w-4/5 -mt-16 md:-mt-20 md:-mr-16 relative float-right font-sans flex flex-col gap-2"
+  >
+    <p class="uppercase text-xl font-light">
+      {{ service.name }} -
+      <span class="normal-case">{{
+        service.price | currency: "INR":"symbol-narrow"
+      }}</span>
+    </p>
+    <p class="uppercase font-bold text-sm">{{ service.tag }}</p>
+    <p class="text-xs font-extralight tracking-wide">
+      {{ service.description }}
+    </p>
+  </div>
 </div>

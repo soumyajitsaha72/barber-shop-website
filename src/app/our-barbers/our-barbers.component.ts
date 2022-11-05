@@ -11,6 +11,8 @@ import { Barber } from 'src/app/shared/model/barber';
 export class OurBarbersComponent implements OnInit {
   barbers: Barber[];
   displaySeeMore: boolean;
+  sliceStart = 0;
+  sliceEnd = 3;
 
   constructor(
     private barberShopService: BarberShop,
@@ -23,6 +25,8 @@ export class OurBarbersComponent implements OnInit {
 
     if (this.route.snapshot.routeConfig.path === 'barbers') {
       this.displaySeeMore = false;
+      this.sliceStart = 0;
+      this.sliceEnd = 100;
     }
   }
 }

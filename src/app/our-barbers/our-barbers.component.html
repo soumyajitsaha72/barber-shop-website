@@ -11,7 +11,7 @@
     class="barber-container flex flex-col md:flex-row md:flex-wrap py-6 gap-8 items-center justify-center"
   >
     <app-barber-card
-      *ngFor="let barber of barbers"
+      *ngFor="let barber of barbers | slice: sliceStart:sliceEnd"
       [barber]="barber"
     ></app-barber-card>
   </div>
