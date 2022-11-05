@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Barber } from 'src/app/shared/model/barber';
 
 @Component({
   selector: 'app-barber-card',
@@ -7,12 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class BarberCardComponent implements OnInit {
 
-  @Input() barber: {
-    name: string;
-    img: string;
-    speciality: string;
-    description: string;
-  };
+  @Input() barber: Barber;
 
   constructor() { }
 
