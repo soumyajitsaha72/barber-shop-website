@@ -81,6 +81,12 @@ export class BarberShop {
     ),
   ];
 
+  contactUs = {
+    address : "Buddhisodon Park, Sabarnor Barir Samne, Belur, Howrah, India - 700001",
+    email : "xyz@gmail.com",
+    mobile : "1234567890"
+  }
+
   socialMediaLinks = {
     facebook: '#',
     instagram: '#',

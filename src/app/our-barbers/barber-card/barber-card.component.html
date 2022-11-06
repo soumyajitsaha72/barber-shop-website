@@ -6,7 +6,7 @@
             <p>{{ barber.name }}</p>
         </div>
         <div class="px-2 text-center">{{ barber.description }}</div>
-        <button
+        <button (click)="onClickBarberLink(barber.id)"
             class="w-full p-4 mx-auto text-white bg-black rounded text-sm font-sans my-4 font-bold hover:bg-gray-700 duration-200 cursor-pointer">Read
             More...</button>
     </div>

@@ -1,0 +1,18 @@
+<div class="max-w-sm md:max-w-lg border-8 border-gray-400 mx-auto flex flex-col items-center gap-4 p-4 font-sans">
+    <img class="max-h-60 md:max-h-72 max-w-2/3 grayscale" [src]="barber.img" alt="barber-img">
+    <p class="text-3xl font-bold">{{ barber.name }}</p>
+    <div class="flex flex-row gap-4">
+        <div class="flex flex-col items-align justify-center bg-gray-200 p-4 gap-2 rounded-t-full">
+            <img class="h-10 w-fit self-center grayscale" [src]="barber.specialityImgUrl" alt="speciality-img">
+            <p class="font-bold">Cutting</p>
+        </div>
+        <div class="flex flex-col justify-center font-light text-right">
+            <p><span class="font-bold">Nickname</span> - Maped</p>
+            <p><span class="font-bold">Age</span> - 29</p>
+            <p><span class="font-bold">Mobile</span> - 1234567890</p>
+            <p><span class="font-bold">Address</span> - C/O Sabarno Sarkar, Buddhihin Park,Kolkata 700001</p>
+        </div>
+    </div>
+
+    <p class="text-gray-700 first-letter:pl-10">{{ barber.description }}</p>
+</div>

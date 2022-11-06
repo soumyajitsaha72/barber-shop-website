@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { BarberReadmeComponent } from './barber-readme/barber-readme.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { OurBarbersComponent } from './our-barbers/our-barbers.component';
 import { OurServicesComponent } from './our-services/our-services.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -23,10 +25,18 @@ const routes: Routes = [
     path: 'barbers',
     component: OurBarbersComponent,
   },
+    {
+    path: 'barbers/:id',
+    component: BarberReadmeComponent,
+  },
   {
     path: 'contact',
     component: ContactComponent,
   },
+  {
+    path:'**',
+    component: PageNotFoundComponent
+  }
 ];
 
 @NgModule({

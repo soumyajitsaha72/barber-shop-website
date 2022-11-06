@@ -16,6 +16,8 @@ import { OutletComponent } from './outlet/outlet.component';
 import { OurBarbersComponent } from './our-barbers/our-barbers.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { BarberReadmeComponent } from './barber-readme/barber-readme.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { ContactComponent } from './contact/contact.component';
     OurBarbersComponent,
     AboutComponent,
     ContactComponent,
+    BarberReadmeComponent,
+    PageNotFoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
