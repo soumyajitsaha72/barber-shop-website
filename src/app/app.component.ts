@@ -13,6 +13,6 @@ export class AppComponent implements OnInit {
 
     setTimeout(() => {
       this.isLoading = false;
-    }, 500);
+    },2000);
   }
 }
