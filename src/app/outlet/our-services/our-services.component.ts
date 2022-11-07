@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { BarberShop } from '../shared/config/barber-shop.service';
-import { Service } from '../shared/model/service';
+import { BarberShop } from '../../shared/config/barber-shop.service';
+import { Service } from '../../shared/model/service';
 
 @Component({
   selector: 'app-our-services',

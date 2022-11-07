@@ -12,8 +12,6 @@
       }}</span>
     </p>
     <p class="uppercase font-bold text-sm">{{ service.tag }}</p>
-    <p class="text-xs font-extralight tracking-wide">
-      {{ service.description }}
-    </p>
+    <p class="text-xs font-extralight tracking-wide" [innerText]="service.description"></p>
   </div>
 </div>

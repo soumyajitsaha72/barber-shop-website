@@ -1,0 +1,18 @@
+<div class="max-w-sm md:max-w-lg border-8 rounded border-gray-400 mx-auto flex flex-col items-center gap-4 p-4 m-4 font-sans">
+    <img class="max-h-60 md:max-h-72 max-w-2/3 grayscale" [src]="barber.img" alt="barber-img">
+    <p class="text-3xl font-bold">{{ barber.name }}</p>
+    <div class="flex flex-row gap-4">
+        <div class="max-h-fit max-w-fit flex flex-col items-align justify-center bg-emerald-200 pt-4 px-4 gap-2 rounded-t-full">
+            <img class="h-10 self-center grayscale" [src]="barber.specialityImgUrl" alt="speciality-img">
+            <p class="font-bold capitalize">{{ barber.speciality }}</p>
+        </div>
+        <div class="flex flex-col justify-center font-light text-right">
+            <p><span class="font-bold">Nickname</span> - {{ barber.nickname }}</p>
+            <p><span class="font-bold">Age</span> - {{ barber.age }}</p>
+            <p><span class="font-bold">Mobile</span> - {{ barber.mobileNumber}}</p>
+            <p><span class="font-bold">Address</span> - {{ barber.address }}</p>
+        </div>
+    </div>
+
+    <p class="text-gray-700 first-letter:pl-10" [innerText]="barber.description"></p>
+</div>

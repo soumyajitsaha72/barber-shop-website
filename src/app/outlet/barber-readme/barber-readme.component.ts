@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { BarberShop } from '../shared/config/barber-shop.service';
-import { Barber } from '../shared/model/barber';
+import { BarberShop } from '../../shared/config/barber-shop.service';
+import { Barber } from '../../shared/model/barber';
 
 @Component({
   selector: 'app-barber-readme',

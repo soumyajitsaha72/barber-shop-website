@@ -8,19 +8,20 @@
     Contact Us
   </p>
 
-  <p class="hidden rounded w-full max-w-sm bg-emerald-300 font-sans text-gray-600 text-center p-2">Message Sent Successfully.</p>
+  <p class="hidden rounded w-full max-w-sm md:max-w-md bg-emerald-300 font-sans text-gray-600 text-center p-2">Message Sent Successfully.</p>
   <p class="hidden rounded w-full max-w-sm bg-red-300 font-sans text-gray-600 text-center p-2">Unsuccessful! Please try again.</p>
 
-  <div class="my-4 max-w-sm font-sans text-gray-600">
+  <div class="my-4 max-w-sm md:max-w-md font-sans text-gray-600">
     <p><span class="font-bold">Address</span> - {{ contactUs.address }}</p>
     <p><span class="font-bold">Email</span> - {{ contactUs.email }}</p>
     <p><span class="font-bold">Mobile</span> - {{ contactUs.mobile }}</p>
   </div>
-  <div class="max-w-sm font-sans text-lg space-y-4 w-full">
+  <div class="max-w-sm md:max-w-md font-sans text-lg space-y-4 w-full">
     <form class="flex flex-col gap-2">
       <input class="border-2 border-gray-400 focus:outline-gray-800 rounded p-2" type="text" placeholder="Name">
       <input class="border-2 border-gray-400 focus:outline-gray-800 rounded p-2" type="text" placeholder="Email">
-      <input class="bg-black text-white p-2 rounded border-2 border-gray-800 hover:bg-white hover:text-black duration-200 cursor-pointer" type="submit">
+      <textarea class="border-2 border-gray-400 focus:outline-gray-800 rounded p-2" cols="30" rows="5" placeholder="Message"></textarea>
+      <input class="bg-black text-white p-2 rounded border-2 border-gray-800 hover:bg-white hover:text-black duration-200 cursor-pointer mt-2" type="submit">
     </form>
   </div>
 </section>

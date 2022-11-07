@@ -29,4 +29,9 @@ export class NavbarComponent implements OnInit {
       this.renderer.addClass(this.toggleDiv.nativeElement,"hidden");
     }
   }
+
+  logoNavbarToggle() {
+    this.toggleNavElement = false;
+    this.renderer.addClass(this.toggleDiv.nativeElement,"hidden");
+  }
 }

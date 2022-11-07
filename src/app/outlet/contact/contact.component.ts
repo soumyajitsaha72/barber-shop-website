@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BarberShop } from '../shared/config/barber-shop.service';
+import { BarberShop } from '../../shared/config/barber-shop.service';
 
 @Component({
   selector: 'app-contact',
