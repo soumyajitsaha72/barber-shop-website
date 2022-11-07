@@ -1,8 +1,8 @@
-<div class="max-w-sm md:max-w-lg border-8 rounded border-gray-400 mx-auto flex flex-col items-center gap-4 p-4 m-4 font-sans">
+<div class="max-w-xs md:max-w-md lg:max-w-lg border-8 rounded border-gray-400 mx-auto flex flex-col items-center gap-4 p-6 m-4 font-sans">
     <img class="max-h-60 md:max-h-72 max-w-2/3 grayscale" [src]="barber.img" alt="barber-img">
     <p class="text-3xl font-bold">{{ barber.name }}</p>
-    <div class="flex flex-row gap-4">
-        <div class="max-h-fit max-w-fit flex flex-col items-align justify-center bg-emerald-200 pt-4 px-4 gap-2 rounded-t-full">
+    <div class="flex flex-row gap-4 items-center">
+        <div class="h-full w-fit flex flex-col items-align justify-center bg-emerald-200 py-6 px-4 gap-2 rounded-t-full">
             <img class="h-10 self-center grayscale" [src]="barber.specialityImgUrl" alt="speciality-img">
             <p class="font-bold capitalize">{{ barber.speciality }}</p>
         </div>
